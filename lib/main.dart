@@ -99,8 +99,8 @@ class _HomePageState extends State<HomePage> {
                       padding: EdgeInsets.all(10),
                       child: ListTile(
                         isThreeLine: true,
-                        contentPadding:EdgeInsets.all(10) ,
-                        
+                        contentPadding: EdgeInsets.all(10),
+
                         trailing: Icon(Icons.phone_android),
                         title: Text(
                           "${LaptopNAmes[i]}",
@@ -108,10 +108,16 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                         subtitle: Text("${LaptSubTitle[i]}"),
+                        iconColor: Colors.amber,
+                        minLeadingWidth: 150,
+                        minVerticalPadding: 5,
+                        horizontalTitleGap: 30,
+                        
                         leading: Image(
                           alignment: Alignment.topLeft,
-                          image: AssetImage("${laptopImages[i]}"),fit: BoxFit.fill,
-                         
+                          image: AssetImage("${laptopImages[i]}"),
+                          fit: BoxFit.fill,
+                        
                         ),
                       ),
                     )
